@@ -15,6 +15,7 @@ removeBtn.addEventListener('click', removeLocalStorage)
 
 function removeLocalStorage () {
     localStorage.clear();
+    getClass.remove()
 }
 
 getClass.innerHTML = items.map(item =>

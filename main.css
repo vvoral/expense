@@ -14,44 +14,65 @@ td, th {
     text-align: left;
     padding: 8px;
 }
+
 tr:nth-child(even),table.list thead>tr {
     background-color: #dddddd;
 }
 
 input[type=text], input[type=number] {
     width: 100%;
-    padding: 12px 20px;
+    padding: 15px 20px;
     margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 2px;
     box-sizing: border-box;
     max-width: 400px;
 }
 
-input[type=submit]{
-    width: 30%;
-    background-color: #ddd;
-    color: #000;
+.btn {
+    width: 100%;
+    max-width: 400px;
+    color: #fff;
     padding: 14px 20px;
     margin: 8px 0;
     border: none;
-    border-radius: 4px;
+    border-radius: 2px;
     cursor: pointer;
+    font-size: 16px;
+    transition: all 0.5s ease 0s;
+}
+
+.btn:hover {
+    background-color: #5fd2b4;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.1) 0%,
+            rgba(0, 0, 0, 0) 100%
+    );
+    color: #fff;
+}
+
+input[type=submit]{
+    background-color: #0f9d58;
+}
+
+#remove {
+    background-color: #d23459;
+    margin-bottom: 24px;
+}
+
+input[type=submit]:hover{
+    background-color: darkgreen;
 }
 
 form div.form-action-buttons{
     text-align: right;
 }
 
-a{
-    cursor: pointer;
-    text-decoration: underline;
-    color: #0000ee;
-    margin-right: 4px;
-}
 
-label.validation-error{
-    color:   red;
-    margin-left: 5px;
+
+.formStyles {
+    display: flex;
+    flex-direction: column;
 }
