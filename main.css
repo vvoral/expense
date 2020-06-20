@@ -58,6 +58,9 @@ input[type=text], input[type=number] {
 
 input[type=submit]{
     background-color: #0f9d58;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 
 #remove {
