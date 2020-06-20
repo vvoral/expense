@@ -41,6 +41,7 @@ input[type=text], input[type=number] {
     cursor: pointer;
     font-size: 16px;
     transition: all 0.5s ease 0s;
+    -webkit-appearance: none;
 }
 
 .btn:hover {
