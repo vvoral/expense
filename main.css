@@ -5,21 +5,20 @@ body > table{
 table{
     border-collapse: collapse;
 }
-table.list{
+table.table{
     width:100%;
 }
 
 td, th {
-    border: 1px solid #dddddd;
     text-align: left;
-    padding: 8px;
+    padding: 8px 6px;
 }
 
-tr:nth-child(even),table.list thead>tr {
+tr:nth-child(even),table.table thead>tr {
     background-color: #dddddd;
 }
 
-input[type=text], input[type=number] {
+input[type=text], input[type=number],input[type=date] {
     width: 100%;
     padding: 15px 20px;
     margin: 8px 0;
@@ -29,6 +28,12 @@ input[type=text], input[type=number] {
     box-sizing: border-box;
     max-width: 400px;
 }
+
+/* Input required styles */
+
+/*input:required{*/
+/*  border-color: #D23459;*/
+/*}*/
 
 .btn {
     width: 100%;
@@ -76,9 +81,34 @@ form div.form-action-buttons{
     text-align: right;
 }
 
-
-
 .formStyles {
     display: flex;
     flex-direction: column;
+}
+
+.table-row {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    border-bottom: 0;
+    padding: 8px;
+}
+
+.table-cell {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: flex-start;
+    flex-basis: 25%;
+}
+
+.table-cell:first-child {
+    flex-basis: 75%;
+}
+
+.table-cell span {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bold;
 }

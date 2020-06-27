@@ -9,23 +9,33 @@
 
 <body>
 
-    <form onsubmit="giveMeData()" class="formStyles">
-        <p>Please insert the item</p>
-        <input type="text" id="box">
+    <form id="id1" class="formStyles">
+        <h2>Insert your expense $$</h2>
+        <input type="date" id="date" required>
+        <input type="text" id="place" required>
+        <input type="number" id="price" required>
         <input type="submit" value="Submit" class="btn">
     </form>
 
    <button id="remove" class="btn">Remove</button>
 
-    <table class="list" id="employeeList">
+    <table class="table" id="employeeList">
         <thead>
         <tr>
+            <th>Date</th>
             <th>Place</th>
+            <th>Price</th>
         </tr>
         </thead>
         <tbody class="test">
         </tbody>
     </table>
+    <div class="table-row">
+        <div class="table-cell"><span>TOTAL</span></div>
+        <div class="table-cell">
+            <span id="total"></span>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 </body>
