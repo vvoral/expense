@@ -18,7 +18,9 @@ tr:nth-child(even),table.table thead>tr {
     background-color: #dddddd;
 }
 
-input[type=text], input[type=number],input[type=date] {
+input[type=text],
+input[type=number],
+input[type=date] {
     width: 100%;
     padding: 15px 20px;
     margin: 8px 0;
@@ -27,13 +29,12 @@ input[type=text], input[type=number],input[type=date] {
     border-radius: 2px;
     box-sizing: border-box;
     max-width: 400px;
+    margin-bottom: 20px;
 }
 
-/* Input required styles */
-
-/*input:required{*/
-/*  border-color: #D23459;*/
-/*}*/
+label {
+    font-weight: bold;
+}
 
 .btn {
     width: 100%;
