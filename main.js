@@ -11,6 +11,7 @@ function addExpense(e) {
 
     items.push(item);
     localStorage.setItem('myObj', JSON.stringify(items));
+    submitForm.reset()
 
     updateTable()
 
