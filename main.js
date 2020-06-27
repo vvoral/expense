@@ -51,7 +51,7 @@ submitForm.addEventListener('submit', addExpense);
 
 function scrollToBottom() {
 
-    rows = document.querySelectorAll(".table-row");
+    rows = document.querySelectorAll(".table-result tr");
     last = rows[rows.length-1];
 
     last.scrollIntoView({
