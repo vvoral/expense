@@ -42,7 +42,7 @@ removeBtn.addEventListener('click', removeLocalStorage);
 
 function removeLocalStorage () {
     localStorage.clear();
-    getClass.remove()
+    window.location.reload();
 }
 
 let submitForm = document.getElementById("id1");
