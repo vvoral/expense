@@ -30,6 +30,7 @@ input[type=date] {
     box-sizing: border-box;
     max-width: 400px;
     margin-bottom: 20px;
+    -webkit-appearance: none;
 }
 
 label {
